@@ -1,0 +1,71 @@
+    .iframe100 { 
+        border: none;   height: 100vh;   width: 100vw; overflow: auto 
+    }
+        .iframe70 {
+            border: none;   height: 100%;   width: 90%; overflow: auto; border: dotted 0px darkblue; top:0;left:0
+        }
+         div {
+            width: 100%;
+            height: 700px;
+            /* border: 5px dotted purple; */
+            border: 3px line black;
+            padding: 0px;
+        }
+        #container{
+            display:grid;
+            /* border:5px solid green; */
+            border:0px solid green;
+            grid-template-areas:
+                'header header'
+                'menu main ';
+            /* grid-template-rows: 20% 500px; */
+            grid-template-columns: 150px 1fr ;
+            margin:0px;
+            padding: 0px;
+            top : 0;
+        	left : 0;
+        }
+        /* 백그라운드 칼라 연습 */
+        div.top {
+             grid-area: header;
+            height: 10%;
+            width: 100%;
+            /* float: top; */
+            box-sizing: border-box;
+            background:  #333;
+            margin:0px;
+            padding: 0px;
+            /* #background: #ff0; */
+        }
+        .left {
+            grid-area: menu;
+            /* box-sizing: border-box; */
+            /* border:green dotted 5px; */
+            background: white;
+            width:100%;
+            margin:0px;
+            padding: 0px;
+            /* background: rgb(255, 0, 98); */
+        }
+        .content {
+            grid-area: main;
+            /* box-sizing: border-box; */
+            background: white;
+            /* width: 90%; */
+            border: gray 0px solid;
+            margin:0px;
+            padding: 0px;
+            /* background: powderblue; */
+        }
+        .video{
+        	/* position : absolute; */
+        	top : 0;
+        	left : 0;
+        	width: 100%;
+            height: 100%;
+
+        } 
+        .margin_0px{
+            margin: 0px;
+            padding: 0px;
+        }

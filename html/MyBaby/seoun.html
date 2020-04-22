@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language = "javascript">
+	var imgArray = new Array();
+	imgArray[0] = "./image/1.jpg";
+	imgArray[1] = "./image/2.jpg";
+	imgArray[2] = "./image/3.jpg";
+		
+	function showImage(){
+		var imgNum = Math.round(Math.random()*2);
+		var objImg = document.getElementById("seounImg");
+		objImg.src = imgArray[imgNum];
+    }
+</script>
+</head>
+<body onload = "showImage()">
+    <H1>이미지 폴더를 이용한 서은 사진 출력</H1>
+    <img id = "seounImg" border="0" width="100%" height="100%">
+    
+</body>
+</html>
